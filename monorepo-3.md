@@ -27,6 +27,8 @@ Sebelum mulai coding, kita perlu daftarkan aplikasi di Google Cloud Console.
 2. Buat project baru, misal `monorepo`
 3. Di menu **APIs & Services → Library**, cari dan aktifkan:
    - **Google Classroom API**
+   [contoh-google-classroom-api-open.png](https://github.com/user-attachments/assets/7b11bd43-204b-4a59-b8f6-992a55227a36):
+<img width="960" height="auto" alt="Image" src="https://github.com/user-attachments/assets/7b11bd43-204b-4a59-b8f6-992a55227a36" />
 
 ## 1.2 Buat OAuth2 Credentials
 
@@ -47,6 +49,8 @@ Sebelum mulai coding, kita perlu daftarkan aplikasi di Google Cloud Console.
    ```
 4. klik **Download JSON** berisi Client ID & secret. 
 5. Rename file jadi **credentials.json**, masukkan ke root proyek.
+   - [contoh-oauth-credential.png](https://github.com/user-attachments/assets/81fc0179-256c-4783-8e7f-cc25edf0ee0c):
+<img width="1919" height="1199" alt="Image" src="https://github.com/user-attachments/assets/81fc0179-256c-4783-8e7f-cc25edf0ee0c" />
 
 ## 1.3 Tambahkan ke `.env` Backend
 
@@ -795,15 +799,21 @@ bun dev
 
 Akses:
 - Frontend: [http://localhost:5173](http://localhost:5173) ← App2 (user list dari Phase 2)
-- Frontend Classroom: [http://localhost:5173/classroom](http://localhost:5173/classroom) ← App3
+- Frontend Classroom: [http://localhost:5173/classroom](http://localhost:5173/classroom) ← App3. 
 - Backend API: [http://localhost:3000/swagger](http://localhost:3000/swagger)
 
 Alur penggunaan mahasiswa:
 1. Buka `http://localhost:5173/classroom`
 2. Klik **Login dengan Google**
-3. Pilih akun Google kampus → izinkan akses Classroom
+3. Pilih akun Google kampus → izinkan akses Classroom. Tampilan harusnya seperti berikut:   
+   - [contoh-ouath-classroom-izin.png](https://github.com/user-attachments/assets/9406a688-1d5a-4da7-89b8-10b852cfda81): 
+   <img width="960" height="auto" alt="Image" src="https://github.com/user-attachments/assets/9406a688-1d5a-4da7-89b8-10b852cfda81" alt="contoh-ouath-classroom-izin.png"/>
+
 4. Di-redirect kembali ke `/classroom`
-5. Pilih mata kuliah → lihat grid tugas + submisi
+5. Pilih mata kuliah → lihat grid tugas + submisi.
+
+   - [contoh-fe-classroom-list.png](https://github.com/user-attachments/assets/889615f4-5ec4-4c6f-b00f-4e347c4ea74c):
+<img width="960" height="auto" alt="Image" src="https://github.com/user-attachments/assets/889615f4-5ec4-4c6f-b00f-4e347c4ea74c" alt="contoh-fe-classroom-list.png"/>
 
 ---
 
